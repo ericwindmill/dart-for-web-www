@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de849394-2008-46b0-9148-53273cdb204e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/lessons/1-3-null-aware.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/lessons/1-4-type-string.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/lessons/1-5-booleans.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/lessons/1-6-numbers.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/lessons/1-2-operators.md" afterPath="$PROJECT_DIR$/content/lessons/1-2-operators.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/layouts/css/index.css" afterPath="$PROJECT_DIR$/src/layouts/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/lesson.jsx" afterPath="$PROJECT_DIR$/src/templates/lesson.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo.md" afterPath="$PROJECT_DIR$/todo.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,12 +23,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="todo.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/todo.md">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="533">
-                <caret line="35" column="15" lean-forward="false" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="160">
+                <caret line="8" column="42" lean-forward="false" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -93,7 +86,6 @@
         <option value="$PROJECT_DIR$/src/components/Layout/Navigation.jsx" />
         <option value="$PROJECT_DIR$/content/lessons/00-post-list.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/components/Layout/TableOfContents.jsx" />
         <option value="$PROJECT_DIR$/src/components/Layout/Header.jsx" />
         <option value="$PROJECT_DIR$/src/pages/about.jsx" />
@@ -122,6 +114,7 @@
         <option value="$PROJECT_DIR$/content/lessons/1-4-type-string.md" />
         <option value="$PROJECT_DIR$/content/lessons/1-6-numbers.md" />
         <option value="$PROJECT_DIR$/todo.md" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -274,12 +267,12 @@
       <workItem from="1512228704487" duration="628000" />
       <workItem from="1514045776770" duration="3868000" />
       <workItem from="1514069589736" duration="7056000" />
-      <workItem from="1514140546320" duration="8226000" />
+      <workItem from="1514140546320" duration="8471000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68710000" />
+    <option name="totallyTimeSpent" value="68955000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -408,16 +401,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="120">
-            <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1185,8 +1168,19 @@
     <entry file="file://$PROJECT_DIR$/todo.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="533">
-            <caret line="35" column="15" lean-forward="false" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
+          <first_editor relative-caret-position="740">
+            <caret line="37" column="12" lean-forward="true" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="160">
+            <caret line="8" column="42" lean-forward="false" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
             <folding />
           </first_editor>
           <second_editor />
