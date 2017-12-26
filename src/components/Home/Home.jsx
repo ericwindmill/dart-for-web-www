@@ -1,12 +1,11 @@
 import React from "react"
 import Link from 'gatsby-link'
 import styled from 'styled-components'
+import Blockquote from "../Ui/blockquote"
 
+// This component is literally a carbon copy of Table of Contents, but with different CSS layout.
 
-// This class should not be used for listing posts, but for chapter based Docs. See PostListing for that.
-// You'll also need to add your chapters to siteConfig
-
-class TableOfContents extends React.Component {
+class Home extends React.Component {
   buildNodes() {
     const {posts} = this.props
     const type = this.props.contentsType
@@ -46,7 +45,7 @@ class TableOfContents extends React.Component {
       const chapterLessons = []
       chapter.forEach(node => {
         chapterLessons.push(
-          <LessonContainer>
+          <LessonContainer key={node.id}>
             <Link to={node.path}>
               <li>
                 <span>
@@ -74,18 +73,46 @@ class TableOfContents extends React.Component {
 
   render() {
     return (
-      <TableOfContentsContainer>
-        <ul>
-          {this.nodeListItems()}
+      <BodyContainer>
+        <h2>About Dart</h2>
+        <Blockquote>
+          <p>Dart is an application programming language that’s easy to learn, easy to scale, and deployable everywhere. Google depends on Dart to make very large apps.
+          </p>
+          <a href='https://www.dartlang.org/'>-dartlang.org</a>
+        </Blockquote>
+        <ul className='feature-list'>
+          <li>Object oriented</li>
+          <li>Optionally typed</li>
+          <li>Class defined</li>
+          <li>Single inheritance</li>
+          <li>Transcompiles into JavaScript</li>
         </ul>
-      </TableOfContentsContainer>
+        <Divider />
+        <TableOfContentsContainer>
+          <ul>
+            {this.nodeListItems()}
+          </ul>
+        </TableOfContentsContainer>
+      </BodyContainer>
+
 
     )
   }
 }
 
+const BodyContainer = styled.div`
+  .feature-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+`
+
+const Divider = styled.div`
+  border-bottom: 1px solid black;
+  width: 100%;
+`
+
 const TableOfContentsContainer = styled.div`
-  padding: ${props => props.theme.sitePadding};
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
@@ -132,5 +159,5 @@ const LessonContainer = styled.div`
   }
 `
 
-export default TableOfContents
+export default Home
 

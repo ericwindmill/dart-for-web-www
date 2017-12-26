@@ -5,7 +5,7 @@ import styled from "styled-components"
 import SEO from "../components/SEO/SEO"
 import config from "../../data/SiteConfig"
 import MainHeader from '../components/Layout/Header'
-import CtaButton from '../components/CtaButton'
+import Home from "../components/Home/Home";
 
 class Index extends React.Component {
 
@@ -23,9 +23,11 @@ class Index extends React.Component {
             logo={config.siteLogo}
           />
           <BodyContainer>
-            <h2>A Gatsby Template for Content</h2>
-            <p>Made for modern documentation sites. Table of Contents automatically generated from markdown files. </p>
-            <CtaButton to={'/lesson-one'}>See Your First Post</CtaButton>
+            <Home
+              posts={this.props.data.allPostTitles.edges}
+              contentsType="lesson"
+              chapterTitles={config.toCChapters}
+            />
           </BodyContainer>
         </main>
       </div>
@@ -45,6 +47,21 @@ const BodyContainer = styled.div`
 /* eslint no-undef: "off"*/
 export const pageQuery = graphql`
   query IndexQuery {
+    allPostTitles: allMarkdownRemark{
+          edges {
+            node {
+              frontmatter {
+                title
+                lesson
+                chapter
+                type
+              }
+              fields {
+                slug
+              }
+            }
+          }
+        }
     allMarkdownRemark(
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }

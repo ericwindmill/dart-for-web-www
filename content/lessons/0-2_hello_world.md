@@ -1,15 +1,8 @@
 ---
 title: "Hello World"
 lesson: 2
-chapter: 1
-cover: "https://unsplash.it/400/300/?random?BoldMage"
-date: "01/01/2017"
-category: "tech"
+chapter: 0
 type: "lesson"
-tags:
-    - programming
-    - stuff
-    - other
 ---
 
 > For now, I suggest opening [Dartpad](https://dartpad.dartlang.org/) to code along.
@@ -22,6 +15,8 @@ If you type this into Dartpad, you'll get no output.
     void sayHello() {
       print('hello world!');
     }
+    
+    // => *crickets*
 ```
 
 

@@ -49,5 +49,7 @@ module.exports = {
   themeColor: "#c62828", // Used for setting manifest and progress theme colors.
   backgroundColor: "#e0e0e0", // Used for setting manifest background color.
   // TODO: Move this literally anywhere better.
-  toCChapters: ["", "Basics", "Chapter 2"] // Used to generate the Table Of Contents. Index 0 should be blank.
+  // Used to generate the Table Of Contents. Index 0 should be blank.
+  // UPDATE: Index 0 should not be blank, but I have no idea what I changed to change the way it works.
+  toCChapters: ["Hello World", "Language Tour", "Environment Set Up", "Web Development" ]
 };

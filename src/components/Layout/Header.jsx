@@ -10,11 +10,15 @@ class MainHeader extends React.Component {
           <IndexHeadContainer>
             <Navigation />
             <Hero>
-              <img src={this.props.logo} width='150px' />
-              <div>
+              <img className='dart-logo' src={this.props.logo} width='150px' />
+              <div className='heading'>
                 <h1>Dart</h1>
                 <h4>for web developers</h4>
               </div>
+              <Tagline>
+                <p>From the basics of Dart programming to DOM manipulation.</p>
+                <p>This is what you need to know to build the web with Google's alternative to JavaScript.</p>
+              </Tagline>
             </Hero>
           </IndexHeadContainer>
         )
@@ -37,7 +41,7 @@ class MainHeader extends React.Component {
 const IndexHeadContainer = styled.div`
   background: ${props => props.theme.brand};
   padding: ${props => props.theme.sitePadding};
-  text-align: center;
+  
 `
 
 const SiteContainer = styled.div`
@@ -50,25 +54,46 @@ const SiteContainer = styled.div`
 `
 
 const Hero = styled.div`
-  padding: 50px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  & div {
-  padding-left: 30px;
+  padding: 50px 25px 0;
+  margin: auto;
+  display: grid;
+  grid-template-areas: 
+    "dart-logo heading" 
+    "tagline tagline";
+  max-width: 850px;
+  
+  .dart-logo {
+    grid-area: dart-logo;
+    justify-self: end;
   }
+  
+  .heading {
+  padding-left: 30px;
+  grid-area: heading;
+  }
+  
   & > div >h1 {
     font-weight: 600;  
     font-size: 7rem;
     margin: 0;
-    text-align: left;
   }
   & >div >h4 {
     font-weight: 300;
     font-size: 3rem;
     margin: 0;
   }
+`
+
+const Tagline = styled.div`
+    color: white;
+    font-size: 2rem;
+    grid-area: tagline;
+    margin: ${props => props.theme.sitePadding} 0 0 0;
+    
+    & p {
+      margin: 0;
+      text-align: center;
+    }
 `
 
 export default MainHeader

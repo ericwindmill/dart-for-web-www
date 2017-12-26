@@ -1,15 +1,8 @@
 ---
 title: "Dart for Web Developers"
 lesson: 1
-chapter: 1
-cover: "https://unsplash.it/400/300/?random?BoldMage"
-date: "11/27/2017"
-category: "Dart"
+chapter: 0
 type: "lesson"
-tags:
-    - dart
-    - web
-    - javascript
 ---
 
 
@@ -28,7 +21,9 @@ tags:
 >
 > -Wikipedia
 
-Syntactically, you're in good shape if you've ever used TypeScript or Java. In fact, for JS web developers, the biggest road block to overcome is going be using a **typed** language. You'll also potentially have to get used to **Object Oriented Programming**, as JavaScript uses a prototypical hierarchy that's fairly unique. 
+Syntactically, you're in good shape if you've ever used TypeScript or Java. In fact, for JS web developers, the biggest road block to overcome is going be using a **typed** language. You'll also potentially have to get used to **Object Oriented Programming**, as JavaScript uses a prototypical hierarchy that's fairly unique.
+
+**NB**: If you've jumped on the ES6 and Beyond train, then much of the syntax of Dart will look awfully familiar. 
 
 Dart can compile into JavaScript (but doesn't have to). It can used in the browser or server side.
 
@@ -43,9 +38,6 @@ Dart is currently in production at Google Fiber and Goodgle Ads Team (to name a 
 - Productivity using opinionated languages.
 - DOM Manipulation and standard web development in Dart.
 - A look at the best libraries and tools available to Dart Developers.
-
-If you follow the whole course, you'll end up with a simple blog created in Dart.
-
 
 ### Tools 
 

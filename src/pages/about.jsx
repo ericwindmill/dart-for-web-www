@@ -1,16 +1,10 @@
 import React from "react"
-import Link from 'gatsby-link'
 import Helmet from "react-helmet"
 import styled from "styled-components"
 
-import SEO from "../components/SEO/SEO"
 import config from "../../data/SiteConfig"
 import MainHeader from '../components/Layout/Header'
 import About from '../components/About/About'
-
-const BodyContainer = styled.div`
-  padding: ${props => props.theme.sitePadding};
-`
 
 class AboutPage extends React.Component {
   render() {
@@ -32,5 +26,12 @@ class AboutPage extends React.Component {
     );
   }
 }
+
+const BodyContainer = styled.div`
+  padding: ${props => props.theme.sitePadding};
+  max-width: ${props => props.theme.contentWidthLaptop};
+  margin: 0 auto;
+`
+
 
 export default AboutPage;
