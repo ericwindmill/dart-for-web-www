@@ -36,7 +36,7 @@ export default class LessonTemplate extends React.Component {
             />
           </ToCContainer>
           <BodyContainer>
-            <div>
+            <div className='Lesson'>
               <h1>
                 {post.title}
               </h1>
@@ -54,6 +54,7 @@ const BodyGrid = styled.div`
   display: grid;
   grid-template-rows: 75px 1fr;
   grid-template-columns: 300px 1fr;
+  
 `
 
 const BodyContainer = styled.div`
@@ -63,6 +64,11 @@ const BodyContainer = styled.div`
   justify-self: center;
   width: 100%;
   padding: ${props => props.theme.sitePadding};
+  
+  .Lesson {
+    padding-bottom: 100px;
+  }
+  
   
   & > div {
     max-width: ${props => props.theme.contentWidthLaptop};

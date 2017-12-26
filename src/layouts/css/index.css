@@ -86,3 +86,10 @@ blockquote > p:last-child {
 }
 
 
+/**********
+ Table
+***********/
+
+table {
+    width: 100%;
+}
