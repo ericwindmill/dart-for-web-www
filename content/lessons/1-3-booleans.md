@@ -1,6 +1,6 @@
 ---
 title: "Booleans"
-lesson: 5
+lesson: 3
 chapter: 1
 type: "lesson"
 ---

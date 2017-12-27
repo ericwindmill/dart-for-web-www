@@ -5,6 +5,11 @@ import Blockquote from "../Ui/blockquote"
 
 // This component is literally a carbon copy of Table of Contents, but with different CSS layout.
 
+// Refactor TOC for MAIN headings and subheadings. This is how I'll try to solve it:
+// loop through the postNodes.
+// add the post nodes to sub-arrs based on chapter number.
+// hardcode main titles in based on the idx of subarray from the main array.
+
 class Home extends React.Component {
   buildNodes() {
     const {posts} = this.props
@@ -74,7 +79,9 @@ class Home extends React.Component {
   render() {
     return (
       <BodyContainer>
-        <h2>About Dart</h2>
+        <p>
+          Separate yourself from the stack of JavaScript developers. Become a better Web Developer by learning a powerful programming language built around core Object Oriented principals.
+        </p>
         <Blockquote>
           <p>Dart is an application programming language that’s easy to learn, easy to scale, and deployable everywhere. Google depends on Dart to make very large apps.
           </p>
@@ -122,6 +129,12 @@ const TableOfContentsContainer = styled.div`
     list-style: none;
     padding: 0;
     margin: 0;
+  }
+  
+  .chapterItems {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 50px;
   }
   
   p, h6 {

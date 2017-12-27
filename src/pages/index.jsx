@@ -6,6 +6,7 @@ import SEO from "../components/SEO/SEO"
 import config from "../../data/SiteConfig"
 import MainHeader from '../components/Layout/Header'
 import Home from "../components/Home/Home";
+import HighlightedParagraph from "../components/Ui/HighlightedParagraph";
 
 class Index extends React.Component {
 
@@ -22,6 +23,12 @@ class Index extends React.Component {
             location={this.props.location}
             logo={config.siteLogo}
           />
+          <HighlightedParagraph>
+            <h2>Build an App - <em>on Web and Mobile</em></h2>
+            <p>
+              With the impending release of Flutter beta, Dart may be the future of web <em>and</em> mobile development. Follow this tutorial and learn how to write your business logic once and share the code between a web app and mobile app. <em>Truly</em> write once, deploy everywhere.
+            </p>
+          </HighlightedParagraph>
           <BodyContainer>
             <Home
               posts={this.props.data.allPostTitles.edges}

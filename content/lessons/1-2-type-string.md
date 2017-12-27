@@ -1,6 +1,6 @@
 ---
 title: "Strings"
-lesson: 1
+lesson: 2
 chapter: 1
 type: "lesson"
 ---

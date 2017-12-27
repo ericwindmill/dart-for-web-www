@@ -14,27 +14,33 @@ class Blockquote extends Component {
     const link = children[1].props.href;
 
     return (
-      <a href={link} target='_blank'>
         <BlockquoteContainer>
           <Quote>{quote}</Quote>
-          <Attribution>{attrib}</Attribution>
+          <a href={link} target='_blank'>
+            <Attribution><span>{attrib}</span></Attribution>
+          </a>
         </BlockquoteContainer>
-      </a>
     )
   }
 }
 
 const BlockquoteContainer = styled.div`
-  border-left: 2px solid;
+  border-left: 4px solid black;
 `
 
 const Quote = styled.div`
+  font-size: 2rem;
   margin-left: 10px;
+  color: black;
 `
 
 const Attribution = styled.div`
   margin: 10px 0 0 10px;
   font-style: italic;
+  
+  span:hover {
+    border-bottom: 1px solid black;
+  }
 `
 
 

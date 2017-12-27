@@ -1,5 +1,5 @@
 ---
-title: "Variables"
+title: "Variables and Consts"
 lesson: 1
 chapter: 1
 type: "lesson"
@@ -20,7 +20,7 @@ var a = 1;
 
 There's one difference for those of you who don't use 'strict mode' in JavaScript.
 
-In JavaScript, manipulating a variable that hasnt been declared *doesnt throw an error*, it creates that variable in the global scope. 
+In JavaScript, manipulating a variable that hasn't been declared *doesn't throw an error*, it creates that variable in the global scope. 
 
 Dart does what JS 'strict mode' does, and what you'd expect.
  
@@ -28,6 +28,17 @@ Dart does what JS 'strict mode' does, and what you'd expect.
 // beginning of code
 x = 2;
 // => throws error
+```
+
+All uninitialized variables are are initially `null` (opposed to `undefined` in JavaScript).
+
+```dart
+var a;
+if (a == null) {
+  print('it's null');
+}
+
+// => it's null
 ```
 
 ### Variable Types
@@ -65,7 +76,22 @@ If you then try to redeclare  x as a String, Dart complains.
     }
 ```
 
-### Fundamental Types in Dart:
+### Static, Final, Const
+
+These three variable 'types' aren't really types, but modifiers for variables.
+
+* `final` variables are variables that once assigned, can never be reassigned. There are used as properties on classes.
+* `static` variables are 'member' variables. They are properties on the class itself, rather than instances of the class.
+* `const` objects are deeply immutable. i.e. A Map and *all it's values* are immutable. Also, a constant's entire value must be established at compile time, rather than run-time. 
+
+
+The differences between `final` and `const` are subtle.
+
+
+
+
+
+### Fundamental Types in Dart
 
 | Type         |Description |
 | -------------|------------ |
@@ -78,7 +104,9 @@ If you then try to redeclare  x as a String, Dart complains.
 | Map          | Map of key value-pairs |
 | dynamic / var     | any type (detault)|
 
-We'll look more into types later, but they're much more useful than simply keeping track of variables. This code now 4 points of failure that prevent developer mistakes and bugs. *Spend less time debugging* 🤠.
+There are a few more that won't be covered here. 
+
+Types are the biggest difference between JS and Dart, but types are super helpful. This code now 4 points of failure that prevent developer mistakes and bugs. *Spend less time debugging* 🤠.
 
 ```dart
     String doubleAndTransform(int num) {

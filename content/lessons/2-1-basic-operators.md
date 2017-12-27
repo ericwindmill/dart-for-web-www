@@ -5,7 +5,9 @@ chapter: 2
 type: "lesson"
 ---
 
-Operators in Dart are similar to JavaScript.
+Basic operators in Dart are similar to JavaScript. 
+
+The notable differences are **Int Division**, the **prefix incremement and decrememnt**, and the **compound assignments**.
 
 ### Arithmitic
 
@@ -15,11 +17,14 @@ Operators in Dart are similar to JavaScript.
 | -        | -             | Subtraction |
 | *        | *             | Multiplication |
 | /        | /             | Division |
+| ~/       | n/a           | Integer Division
 | %        | %             | Modulo |
-| ++       | ++            | Increment |
-| --       | --            | Decrement |
+| var++    | var++        | Increment |
+| var--    | var--        | Decrement |
+| ++var     | n/a         | Prefix Increment
+| --var     | n/a          | Prefix Decrememnt
 
-### Booleans
+### Logic and Equality
 
 | Operater | JS Equivelent | Description |
 |----------|---------------|------------|
@@ -31,8 +36,37 @@ Operators in Dart are similar to JavaScript.
 | >        | >              | greater than    |
 | >=       | >=            | greater than or equal to |
 
-### Etc
+### Comments
 
 | Operater | JS Equivelent | Description |
 |----------|---------------|------------|
 | //       | //            | comment    |
+
+### Compound Assignment
+
+The `=` is the assignment operator, just like every other language. This can be combined with many operators for some syntatic sugar. 
+
+You can find something like this in JavaScript:
+
+```dart
+var x =1;
+void main() {
+  x += 1;
+  print(x);
+}
+// => 2
+```
+
+Dart gives us quite a few other compound assignments though:
+
+
+| Operater | Description |
+|----------|---------------|
+|  +=    |   addition and assign    |
+|  -=    |   subtraction and assign    |
+|  /=    |   division and assign    |
+|  ~/=    |   int division and assign    |
+|  %=    |   modulo and assign    |
+|  *=    |   multiplication and assign    |
+|  ^=    |   bitwise and assign    |
+|  &=    |   bitwise AND and assign    |

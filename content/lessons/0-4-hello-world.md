@@ -1,6 +1,6 @@
 ---
 title: "Hello World"
-lesson: 2
+lesson: 4
 chapter: 0
 type: "lesson"
 ---

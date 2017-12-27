@@ -1,6 +1,6 @@
 ---
 title: "Numbers"
-lesson: 6
+lesson: 4
 chapter: 1
 type: "lesson"
 ---
