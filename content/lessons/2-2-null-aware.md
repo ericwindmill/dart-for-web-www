@@ -1,7 +1,7 @@
 ---
 title: "Null-Aware Operators"
-lesson: 3
-chapter: 1
+lesson: 2
+chapter: 2
 type: "lesson"
 ---
 

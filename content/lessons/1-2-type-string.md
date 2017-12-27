@@ -1,6 +1,6 @@
 ---
-title: 'Strings'
-lesson: 4
+title: "Strings"
+lesson: 1
 chapter: 1
 type: "lesson"
 ---

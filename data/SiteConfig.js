@@ -51,5 +51,5 @@ module.exports = {
   // TODO: Move this literally anywhere better.
   // Used to generate the Table Of Contents. Index 0 should be blank.
   // UPDATE: Index 0 should not be blank, but I have no idea what I changed to change the way it works.
-  toCChapters: ["Hello World", "Language Tour", "Environment Set Up", "Web Development" ]
+  toCChapters: ["Hello World", "Vars and Types", "Operators", "Control Flow", "Functions", "Classes" ]
 };

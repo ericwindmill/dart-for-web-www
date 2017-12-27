@@ -1,7 +1,7 @@
 ---
 title: "Basic Operators"
-lesson: 2
-chapter: 1
+lesson: 1
+chapter: 2
 type: "lesson"
 ---
 
