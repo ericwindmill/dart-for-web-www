@@ -5,11 +5,6 @@ import Blockquote from "../Ui/blockquote"
 
 // This component is literally a carbon copy of Table of Contents, but with different CSS layout.
 
-// Refactor TOC for MAIN headings and subheadings. This is how I'll try to solve it:
-// loop through the postNodes.
-// add the post nodes to sub-arrs based on chapter number.
-// hardcode main titles in based on the idx of subarray from the main array.
-
 class Home extends React.Component {
   buildNodes() {
     const {posts} = this.props
@@ -27,7 +22,7 @@ class Home extends React.Component {
       }
     })
 
-    const postNodeChapters = [];
+    const postNodeChapters = [[]];
     postNodes.forEach(post => {
       if (postNodeChapters[post.chapter]) {
         postNodeChapters[post.chapter].push(post)
@@ -39,6 +34,8 @@ class Home extends React.Component {
     postNodeChapters.forEach(chapter => {
       chapter.sort((a, b) => a.lessonNumber > b.lessonNumber)
     })
+
+    console.log(postNodeChapters);
     return postNodeChapters
   }
 
@@ -62,6 +59,15 @@ class Home extends React.Component {
           </LessonContainer>
         )
       })
+      switch (idx) {
+        case 0:
+          listItems.push(
+            <h2>Language Tour</h2>
+          )
+          break;
+        default:
+          break;
+      }
       listItems.push(
         <li className='chapter'>
           <h5 className='tocHeading'>

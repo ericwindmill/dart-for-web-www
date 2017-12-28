@@ -13,6 +13,7 @@ const theme = {
   // content width:
   contentWidthLaptop: '850px',
   sitePadding: "25px",
+  spacingUnit: "25px",
 
 }
 
