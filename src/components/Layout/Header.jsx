@@ -1,6 +1,7 @@
 import React from "react"
 import styled from 'styled-components'
 import Navigation from './Navigation'
+import OptInForm from "../Ui/MailChimp";
 
 class MainHeader extends React.Component {
   getHeader() {
@@ -13,7 +14,7 @@ class MainHeader extends React.Component {
               <img className='dart-logo' src={this.props.logo} width='150px' />
               <div className='heading'>
                 <h1>Dart</h1>
-                <h4>for web developers</h4>
+                <h4>for js developers</h4>
               </div>
               <Tagline>
                 <p>From the basics of Dart programming to DOM manipulation.</p>
@@ -40,7 +41,7 @@ class MainHeader extends React.Component {
 
 const IndexHeadContainer = styled.div`
   background: ${props => props.theme.brand};
-  padding: ${props => props.theme.sitePadding};
+  padding: 25px ${props => props.theme.sitePadding} 100px;
   
 `
 

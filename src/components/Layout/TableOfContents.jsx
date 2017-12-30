@@ -95,11 +95,7 @@ class TableOfContents extends React.Component {
   }
 
   handleClick(e) {
-
     const {id} = e.target;
-
-    console.log(e.target)
-
     const idNum = id[id.length - 1]
     const list = document.querySelector(`#list${idNum}`)
     if (list.style.display === 'inherit') {
@@ -140,6 +136,7 @@ const TableOfContentsContainer = styled.div`
 
     .chapterItems {
       display: none;
+      transition: all 300ms ease;
       list-style: none;
       margin-left: ${props => props.theme.spacingUnit};
     }

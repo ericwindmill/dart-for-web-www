@@ -65,6 +65,11 @@ class Home extends React.Component {
             <h2>Language Tour</h2>
           )
           break;
+        case 7:
+          listItems.push(
+            <h2>Web Development</h2>
+          )
+          break;
         default:
           break;
       }
@@ -86,7 +91,7 @@ class Home extends React.Component {
     return (
       <BodyContainer>
         <p>
-          Separate yourself from the stack of JavaScript developers. Become a better Web Developer by learning a powerful programming language built around core Object Oriented principals.
+          Separate yourself from the stack of JavaScript developers. Become a better Web Developer by learning a powerful programming language built by Google around core Object Oriented principals.
         </p>
         <Blockquote>
           <p>Dart is an application programming language that’s easy to learn, easy to scale, and deployable everywhere. Google depends on Dart to make very large apps.

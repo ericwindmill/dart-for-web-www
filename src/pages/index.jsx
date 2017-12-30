@@ -7,6 +7,7 @@ import config from "../../data/SiteConfig"
 import MainHeader from '../components/Layout/Header'
 import Home from "../components/Home/Home";
 import HighlightedParagraph from "../components/Ui/HighlightedParagraph";
+import OptInForm from "../components/Ui/MailChimp";
 
 class Index extends React.Component {
 
@@ -23,11 +24,13 @@ class Index extends React.Component {
             location={this.props.location}
             logo={config.siteLogo}
           />
-          <HighlightedParagraph>
+          <HighlightedParagraph backgroundColor={"black"}>
             <h2>Build an App - <em>on Web and Mobile</em></h2>
             <p>
               With the impending release of Flutter beta, Dart may be the future of web <em>and</em> mobile development. Follow this tutorial and learn how to write your business logic once and share the code between a web app and mobile app. <em>Truly</em> write once, deploy everywhere.
             </p>
+            <h4> New WebApp and Flutter Lessons are added weekly. Get notified of new lessons. Free Forever.</h4>
+            <OptInForm />
           </HighlightedParagraph>
           <BodyContainer>
             <Home
@@ -49,6 +52,8 @@ const BodyContainer = styled.div`
   max-width: ${props => props.theme.contentWidthLaptop};
   margin: 0 auto;
 `
+
+
 
 
 /* eslint no-undef: "off"*/
