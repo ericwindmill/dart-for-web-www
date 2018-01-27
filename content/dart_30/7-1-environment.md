@@ -1,5 +1,5 @@
 ---
-title: "1: Set Up Environment"
+title: "Set Up Environment"
 chapter: 0
 lesson: 1
 type: "lesson"
@@ -23,7 +23,7 @@ dart_project
     pubspec.yaml
 ```
 
-*NB*: There's no `start` or `finish` for this lesson.
+_NB_: There's no `start` or `finish` for this lesson.
 
 This is the most basic, bare-bones Dart project file structure you can have.
 
@@ -36,6 +36,7 @@ There are a few things to note here:
 ### index.html
 
 This is exactly like what you'd be familiar with, you just need to make sure you're pulling in Dart correctly.
+
 ```markup
 <!DOCTYPE html>
 <html>
@@ -57,7 +58,7 @@ This is exactly like what you'd be familiar with, you just need to make sure you
 
 ### main.dart
 
-An important note here is that you have to import the `html` library. This gives us all the methods we need for DOM manipulation, but they are *not* part of basis of Dart like in JS. You'll see this a lot in Dart.
+An important note here is that you have to import the `html` library. This gives us all the methods we need for DOM manipulation, but they are _not_ part of basis of Dart like in JS. You'll see this a lot in Dart.
 
 ```dart
 import 'dart:html';
@@ -66,7 +67,6 @@ void main() {
     // This should look familiar!
   querySelector('#output').text = 'Your Dart app is running.';
 }
-
 ```
 
 ### pubspec.yaml
@@ -102,6 +102,3 @@ pub serve
 ```
 
 Now open your browser and go to `localhost:8080`, and you should see your app!
-
-
-

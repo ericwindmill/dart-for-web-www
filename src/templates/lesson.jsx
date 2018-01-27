@@ -78,6 +78,11 @@ const BodyContainer = styled.div`
 
   .Lesson {
     padding-bottom: 100px;
+
+    img {
+      margin: 15px auto;
+      box-shadow: 2px 2px 8px #c9c9c9;
+    }
   }
 
   & > div {
