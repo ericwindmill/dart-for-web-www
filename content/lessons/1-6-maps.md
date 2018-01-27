@@ -3,6 +3,7 @@ title: "Maps"
 lesson: 6
 chapter: 1
 type: "lesson"
+context: "language-tour"
 ---
 
 `Maps` in Dart are the same as JavaScript:

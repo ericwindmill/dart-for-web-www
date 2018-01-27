@@ -3,6 +3,7 @@ title: "Switch"
 chapter: 3
 lesson: 5
 type: "lesson"
+context: "language-tour"
 ---
 
 Use `switch` statements when your conditionals are more complicated. They're just like JavaScript as well.

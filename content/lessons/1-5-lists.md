@@ -3,6 +3,7 @@ title: "Lists"
 lesson: 5
 chapter: 1
 type: "lesson"
+context: "language-tour"
 ---
 
 Lists are JavaScript's Arrays.

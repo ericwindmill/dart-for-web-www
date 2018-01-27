@@ -2,10 +2,10 @@ import React from "react";
 import Helmet from "react-helmet";
 import styled from "styled-components"
 
-import UserInfo from "../components/UserInfo/UserInfo";
-import Disqus from "../components/Disqus/Disqus";
-import PostTags from "../components/PostTags/PostTags";
-import SocialLinks from "../components/SocialLinks/SocialLinks";
+import UserInfo from "../components/Utility/UserInfo";
+import Disqus from "../components/Utility/Disqus";
+import PostTags from "../components/PostListing/PostTags";
+import SocialLinks from "../components/Utility/SocialLinks";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 

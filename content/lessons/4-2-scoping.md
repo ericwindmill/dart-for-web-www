@@ -3,6 +3,7 @@ title: "Scoping and Closures"
 chapter: 4
 lesson: 2
 type: "lesson"
+context: "language-tour"
 ---
 
 Like JavaScript, Dart is lexically scoped. Every new code block establishes a new scope. But, JS's lexical scoping isn't exactly 'right'. Scoping in Dart is like using `let` instead of var in JavaScript. 

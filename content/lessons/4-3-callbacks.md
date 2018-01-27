@@ -3,6 +3,7 @@ title: "Higher Order Functions"
 chapter: 4
 lesson: 3
 type: "lesson"
+context: "language-tour"
 ---
 
 Functions in Dart are classes, just like everything else. This means that, like in JS, Ruby and some other languages, you can pass functions around as variables, use anonymous functions, return functions, etc.

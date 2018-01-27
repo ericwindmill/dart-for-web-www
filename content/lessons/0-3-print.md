@@ -3,6 +3,7 @@ title: "Print"
 lesson: 3
 chapter: 0
 type: "lesson"
+context: "language-tour"
 ---
 
 To log anything to the console, use the built in function 'print':

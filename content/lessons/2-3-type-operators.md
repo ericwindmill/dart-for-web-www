@@ -3,6 +3,7 @@ title: "Type Operators"
 chapter: 2
 lesson: 3
 type: "lesson"
+context: "language-tour"
 ---
 
 There are three operators that let you check for types and also assign types.

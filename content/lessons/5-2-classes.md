@@ -3,6 +3,7 @@ title: "Basic Classes"
 chapter: 5
 lesson: 2
 type: "lesson"
+context: "language-tour"
 ---
 
 Dart is a true Object Oriented language. Everything is a class. If you've worked with an object oriented language (Java, Python, Ruby, etc) before, most of this will feel exactly as it should. 

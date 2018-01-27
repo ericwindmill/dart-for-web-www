@@ -3,6 +3,7 @@ title: "Ternary"
 chapter: 3
 lesson: 4
 type: "lesson"
+context: "language-tour"
 ---
 
 Dart uses the exact `ternary` syntax as javascript. Very useful when in modern, component-based apps that conditionally render elements. I get a ton of use out of this in Flutter.

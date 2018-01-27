@@ -1,7 +1,7 @@
 import React from "react"
 import styled from 'styled-components'
 import Navigation from './Navigation'
-import OptInForm from "../Ui/MailChimp";
+import OptInForm from "../Utility/MailChimp";
 
 class MainHeader extends React.Component {
   getHeader() {
@@ -13,8 +13,8 @@ class MainHeader extends React.Component {
             <Hero>
               <img className='dart-logo' src={this.props.logo} width='150px' />
               <div className='heading'>
-                <h1>Dart</h1>
-                <h4>for js developers</h4>
+                <h1>Dart 30</h1>
+                <h4>Dart for JS developers.</h4>
               </div>
               <Tagline>
                 <p>From the basics of Dart programming to DOM manipulation.</p>

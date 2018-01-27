@@ -3,6 +3,7 @@ title: "For Loops"
 chapter: 3
 lesson: 1
 type: "lesson"
+context: "language-tour"
 ---
 
 For loops are the same as in JavaScript:

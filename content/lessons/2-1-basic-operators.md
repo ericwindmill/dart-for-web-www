@@ -3,6 +3,7 @@ title: "Basic Operators"
 lesson: 1
 chapter: 2
 type: "lesson"
+context: "language-tour"
 ---
 
 Basic operators in Dart are similar to JavaScript. 

@@ -3,6 +3,7 @@ title: "Function Definitions"
 chapter: 4
 lesson: 1
 type: "lesson"
+context: "language-tour"
 ---
 
 Functions share a lot of characteristics with functions in JavaScript, but they aren't exactly the same.

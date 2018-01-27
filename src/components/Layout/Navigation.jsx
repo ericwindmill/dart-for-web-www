@@ -1,7 +1,7 @@
 import React from "react"
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-import UserLinks from '../UserInfo/UserLinks'
+import UserLinks from '../Utility/UserLinks'
 
 const NavContainer = styled.div`
   display: flex;

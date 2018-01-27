@@ -3,6 +3,7 @@ title: "Mixins"
 chapter: 5
 lesson: 4
 type: "lesson"
+context: "language-tour"
 ---
 
 Mixins are another core idea in many OOP languages. Essentially, Mixins are used to to add members to classes without establishing a new class.

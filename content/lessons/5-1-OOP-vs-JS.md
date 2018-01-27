@@ -3,6 +3,7 @@ title: "Aside: OOP vs JavaScript"
 chapter: 5
 lesson: 1
 type: "lesson"
+context: "language-tour"
 ---
 
 JavaScript *isn't* an Object Oriented Language, despite the fact that ES2015 added a 'Class' syntax. JavaScript actually uses prototypal inheritance, and Es2015 classes are simply wrappers over JS prototypes. With that in mind, OOP can be a bit different then what you may be used to.

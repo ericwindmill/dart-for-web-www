@@ -1,13 +1,13 @@
-import React from "react"
+import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-import Blockquote from "../Ui/blockquote"
+import Blockquote from '../Ui/blockquote'
 
 // This component is literally a carbon copy of Table of Contents, but with different CSS layout.
 
 class Home extends React.Component {
   buildNodes() {
-    const {posts} = this.props
+    const { posts } = this.props
     const type = this.props.contentsType
     const postNodes = []
     posts.forEach(post => {
@@ -22,7 +22,7 @@ class Home extends React.Component {
       }
     })
 
-    const postNodeChapters = [[]];
+    const postNodeChapters = [[]]
     postNodes.forEach(post => {
       if (postNodeChapters[post.chapter]) {
         postNodeChapters[post.chapter].push(post)
@@ -34,15 +34,13 @@ class Home extends React.Component {
     postNodeChapters.forEach(chapter => {
       chapter.sort((a, b) => a.lessonNumber > b.lessonNumber)
     })
-
-    console.log(postNodeChapters);
     return postNodeChapters
   }
-
   nodeListItems() {
     const postNodeChapters = this.buildNodes()
     const listItems = []
     const chapterTitles = this.props.chapterTitles
+    let sectionId
     postNodeChapters.forEach((chapter, idx) => {
       const chapterLessons = []
       chapter.forEach(node => {
@@ -51,7 +49,9 @@ class Home extends React.Component {
             <Link to={node.path}>
               <li>
                 <span>
-                  <p>{node.chapter}.{node.lessonNumber} &nbsp;</p>
+                  <p>
+                    {node.chapter}.{node.lessonNumber} &nbsp;
+                  </p>
                   <h6>{node.title}</h6>
                 </span>
               </li>
@@ -61,44 +61,46 @@ class Home extends React.Component {
       })
       switch (idx) {
         case 0:
-          listItems.push(
-            <h2>Language Tour</h2>
-          )
-          break;
+          listItems.push(<h2 className="language-tour">Language Tour</h2>)
+          break
         case 7:
-          listItems.push(
-            <h2>Web Development</h2>
-          )
-          break;
+          listItems.push(<h2 className="dart-30">Dart 30</h2>)
+          break
         default:
-          break;
+          break
       }
       listItems.push(
-        <li className='chapter'>
-          <h5 className='tocHeading'>
-            {chapterTitles[idx].toUpperCase()}
-          </h5>
-          <ul className='chapterItems'>
-            {chapterLessons}
-          </ul>
+        <li className={`chapter ${sectionId}`}>
+          <h5 className="tocHeading">{chapterTitles[idx].toUpperCase()}</h5>
+          <ul className="chapterItems">{chapterLessons}</ul>
         </li>
       )
     })
     return listItems
   }
 
+  toggleSection(ele) {
+    const section = document.querySelector(`.${ele.target.id}`)
+    section.styles.display = 'none'
+  }
+
   render() {
     return (
       <BodyContainer>
         <p>
-          Separate yourself from the stack of JavaScript developers. Become a better Web Developer by learning a powerful programming language built by Google around core Object Oriented principals.
+          Separate yourself from the stack of JavaScript developers. Become a
+          better Web Developer by learning a powerful programming language built
+          by Google around core Object Oriented principals.
         </p>
         <Blockquote>
-          <p>Dart is an application programming language that’s easy to learn, easy to scale, and deployable everywhere. Google depends on Dart to make very large apps.
+          <p>
+            Dart is an application programming language that’s easy to learn,
+            easy to scale, and deployable everywhere. Google depends on Dart to
+            make very large apps.
           </p>
-          <a href='https://www.dartlang.org/'>-dartlang.org</a>
+          <a href="https://www.dartlang.org/">-dartlang.org</a>
         </Blockquote>
-        <ul className='feature-list'>
+        <ul className="feature-list">
           <li>Object oriented</li>
           <li>Optionally typed</li>
           <li>Class defined</li>
@@ -106,14 +108,14 @@ class Home extends React.Component {
           <li>Transcompiles into JavaScript</li>
         </ul>
         <Divider />
+        <div className="button-section">
+
+        </div>
+        <Divider />
         <TableOfContentsContainer>
-          <ul>
-            {this.nodeListItems()}
-          </ul>
+          <ul>{this.nodeListItems()}</ul>
         </TableOfContentsContainer>
       </BodyContainer>
-
-
     )
   }
 }
@@ -136,37 +138,45 @@ const TableOfContentsContainer = styled.div`
   justify-content: space-between;
   height: 100%;
 
-  & > ul, .chapterItems {
+  & > ul,
+  .chapterItems {
     list-style: none;
     padding: 0;
     margin: 0;
   }
-  
+
   .chapterItems {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 50px;
   }
-  
-  p, h6 {
+
+  p,
+  h6 {
     display: inline-block;
     font-weight: 200;
     margin: 0;
   }
-  
+
   .tocHeading {
-     font-weight: 200;
-     color: ${props => props.theme.brand};
-     margin-bottom: 10px;
+    font-weight: 200;
+    color: ${props => props.theme.brand};
+    margin-bottom: 10px;
   }
-  
+
   .disclaimer {
     font-size: 1.2rem;
+  }
+  
+  .button-section {
+    height: 100px;
+    background: 
   }
 `
 
 const LessonContainer = styled.div`
-  h6, p {
+  h6,
+  p {
     color: black;
     margin: 0;
     line-height: 1.5;
@@ -184,4 +194,3 @@ const LessonContainer = styled.div`
 `
 
 export default Home
-

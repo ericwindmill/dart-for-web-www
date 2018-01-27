@@ -3,6 +3,7 @@ title: "Cascade Operator"
 chapter: 2
 lesson: 4
 type: "lesson"
+context: "language-tour"
 ---
 
 The cascade operator lets you perform a series of operations on the same object. It's basically syntactic sugar:

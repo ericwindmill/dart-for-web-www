@@ -3,6 +3,7 @@ title: "Strings"
 lesson: 2
 chapter: 1
 type: "lesson"
+context: "language-tour"
 ---
 
 String (with a capitol 'S') is the String type in Dart.

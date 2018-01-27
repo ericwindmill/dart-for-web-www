@@ -1,22 +1,35 @@
-import React from "react";
-import Helmet from "react-helmet";
-import styled from "styled-components"
+import React from 'react'
+import Helmet from 'react-helmet'
+import styled from 'styled-components'
 
-import SEO from "../components/SEO/SEO"
+import SEO from '../components/SEO/SEO'
 import SiteHeader from '../components/Layout/Header'
-import config from "../../data/SiteConfig"
-import TableOfContents from "../components/Layout/TableOfContents";
+import config from '../../data/SiteConfig'
+import TableOfContents from '../components/Layout/TableOfContents'
 
 export default class LessonTemplate extends React.Component {
   render() {
-    const { slug } = this.props.pathContext;
-    const postNode = this.props.data.postBySlug;
-    const post = postNode.frontmatter;
+    const { slug } = this.props.pathContext
+    const postNode = this.props.data.postBySlug
+    const post = postNode.frontmatter
     if (!post.id) {
-      post.id = slug;
+      post.id = slug
     }
     if (!post.id) {
-      post.category_id = config.postDefaultCategoryID;
+      post.category_id = config.postDefaultCategoryID
+    }
+    const postContext = post.context
+    let chapterTitles
+    switch (postContext) {
+      case 'dart30':
+        chapterTitles = config.dart30Titles
+        break
+      case 'language-tour':
+        chapterTitles = config.langugaeTourChapters
+        break
+      default:
+        chapterTitles = ['']
+        break
     }
     return (
       <div>
@@ -32,20 +45,19 @@ export default class LessonTemplate extends React.Component {
             <TableOfContents
               posts={this.props.data.allPostTitles.edges}
               contentsType="lesson"
-              chapterTitles={config.toCChapters}
+              chapterTitles={chapterTitles}
+              context={postContext}
             />
           </ToCContainer>
           <BodyContainer>
-            <div className='Lesson'>
-              <h1>
-                {post.title}
-              </h1>
+            <div className="Lesson">
+              <h1>{post.title}</h1>
               <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
             </div>
           </BodyContainer>
         </BodyGrid>
       </div>
-    );
+    )
   }
 }
 
@@ -54,7 +66,6 @@ const BodyGrid = styled.div`
   display: grid;
   grid-template-rows: 75px 1fr;
   grid-template-columns: 300px 1fr;
-  
 `
 
 const BodyContainer = styled.div`
@@ -64,17 +75,16 @@ const BodyContainer = styled.div`
   justify-self: center;
   width: 100%;
   padding: ${props => props.theme.sitePadding};
-  
+
   .Lesson {
     padding-bottom: 100px;
   }
-  
-  
+
   & > div {
     max-width: ${props => props.theme.contentWidthLaptop};
     margin: auto;
   }
-  
+
   & > h1 {
     color: ${props => props.theme.accentDark};
   }
@@ -96,35 +106,38 @@ const ToCContainer = styled.div`
 /* eslint no-undef: "off"*/
 export const pageQuery = graphql`
   query LessonBySlug($slug: String!) {
-    allPostTitles: allMarkdownRemark{
-        edges {
-          node {
-            frontmatter {
-              title
-              lesson
-              chapter
-              type
-            }
-            fields {
-              slug
-            }
+    allPostTitles: allMarkdownRemark {
+      edges {
+        node {
+          frontmatter {
+            title
+            lesson
+            chapter
+            type
+            context
+          }
+          fields {
+            slug
           }
         }
       }
-      postBySlug: markdownRemark(fields: { slug: { eq: $slug } }) {
-        html
-        timeToRead
-        excerpt
-        frontmatter {
-          title
-          cover
-          date
-          category
-          tags
-        }
-        fields {
-          slug
-        }
-      } 
+    }
+    postBySlug: markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      timeToRead
+      excerpt
+      frontmatter {
+        title
+        cover
+        date
+        category
+        tags
+        context
+        type
+      }
+      fields {
+        slug
+      }
+    }
   }
-`;
+`

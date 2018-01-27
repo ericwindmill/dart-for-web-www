@@ -3,6 +3,7 @@ title: "Variables and Consts"
 lesson: 1
 chapter: 1
 type: "lesson"
+context: "language-tour"
 ---
 
 Variables work about like they do in Javascript: 

@@ -1,21 +1,29 @@
-import React from "react"
+import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-import DropdownButton from "../Ui/DropdownButton";
-
+import DropdownButton from '../Ui/DropdownButton'
 
 // This class should not be used for listing posts, but for chapter based Docs. See PostListing for that.
 // You'll also need to add your chapters to siteConfig
 
 class TableOfContents extends React.Component {
   constructor() {
-    super();
+    super()
 
     this.handleClick = this.handleClick.bind(this)
   }
 
-  buildNodes() {
-    const {posts} = this.props
+  getIndexContextPosts(postEdges, context) {
+    const posts = []
+    postEdges.forEach(post => {
+      if (post.node.frontmatter.context === context) {
+        posts.push(post)
+      }
+    })
+    return this.buildNodes(posts)
+  }
+
+  buildNodes(posts) {
     const type = this.props.contentsType
     const postNodes = []
     posts.forEach(post => {
@@ -30,7 +38,7 @@ class TableOfContents extends React.Component {
       }
     })
 
-    const postNodeChapters = [];
+    const postNodeChapters = []
     postNodes.forEach(post => {
       if (postNodeChapters[post.chapter]) {
         postNodeChapters[post.chapter].push(post)
@@ -46,7 +54,10 @@ class TableOfContents extends React.Component {
   }
 
   nodeListItems() {
-    const postNodeChapters = this.buildNodes()
+    const postNodeChapters = this.getIndexContextPosts(
+      this.props.posts,
+      this.props.context
+    )
     const listItems = []
     const chapterTitles = this.props.chapterTitles
     postNodeChapters.forEach((chapter, idx) => {
@@ -57,7 +68,9 @@ class TableOfContents extends React.Component {
             <Link to={node.path}>
               <li>
                 <span>
-                  <p>{node.chapter}.{node.lessonNumber} &nbsp;</p>
+                  <p>
+                    {node.chapter}.{node.lessonNumber} &nbsp;
+                  </p>
                   <h6>{node.title}</h6>
                 </span>
               </li>
@@ -65,27 +78,16 @@ class TableOfContents extends React.Component {
           </LessonContainer>
         )
       })
-      switch (idx) {
-        case 0:
-          listItems.push(
-            <h3>Language Tour</h3>
-          )
-          break;
-        default:
-          break;
-      }
       listItems.push(
-        <div className='chapter'>
+        <div className="chapter">
           <DropdownButton
-            className='buttonSection'
+            className="buttonSection"
             buttonId={`chapter${idx}`}
             dropdownCallback={this.handleClick}
           >
-            <h5 className='tocHeading'>
-              {chapterTitles[idx].toUpperCase()}
-            </h5>
+            <h5 className="tocHeading">{chapterTitles[idx].toUpperCase()}</h5>
           </DropdownButton>
-          <ul className='chapterItems' id={`list${idx}`}>
+          <ul className="chapterItems" id={`list${idx}`}>
             {chapterLessons}
           </ul>
         </div>
@@ -95,85 +97,84 @@ class TableOfContents extends React.Component {
   }
 
   handleClick(e) {
-    const {id} = e.target;
+    const { id } = e.target
     const idNum = id[id.length - 1]
     const list = document.querySelector(`#list${idNum}`)
     if (list.style.display === 'inherit') {
-      list.style.display = 'none';
+      list.style.display = 'none'
     } else {
-      list.style.display = 'inherit';
+      list.style.display = 'inherit'
     }
   }
 
   render() {
     return (
       <TableOfContentsContainer>
-        <ul>
-          {this.nodeListItems()}
-        </ul>
+        <ul>{this.nodeListItems()}</ul>
       </TableOfContentsContainer>
-
     )
   }
 }
 
 const TableOfContentsContainer = styled.div`
-    padding: ${props => props.theme.sitePadding};
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-    height: 100%;
+  padding: ${props => props.theme.sitePadding};
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  height: 100%;
 
-    & > ul> h3 {
-      margin: 0;
-    }
+  & > ul > h3 {
+    margin: 0;
+  }
 
-    & > ul, .chapterItems {
-      list - style: none;
-      padding: 0;
-      margin: 0;
-    }
+  & > ul,
+  .chapterItems {
+    list: none;
+    padding: 0;
+    margin: 0;
+  }
 
-    .chapterItems {
-      display: none;
-      transition: all 300ms ease;
-      list-style: none;
-      margin-left: ${props => props.theme.spacingUnit};
-    }
+  .chapterItems {
+    display: none;
+    transition: all 300ms ease;
+    list-style: none;
+    margin-left: ${props => props.theme.spacingUnit};
+  }
 
-    p, h6 {
-      display: inline-block;
-      font-weight: 200;
-      margin: 0;
-    }
+  p,
+  h6 {
+    display: inline-block;
+    font-weight: 200;
+    margin: 0;
+  }
 
-    .tocHeading {
-      font-weight: 200;
-      color: ${props => props.theme.brand};
-      margin: 0 !important;
-      padding: 10px 5px !important;
-    }
+  .tocHeading {
+    font-weight: 200;
+    color: ${props => props.theme.brand};
+    margin: 0 !important;
+    padding: 10px 5px !important;
+  }
 `
 
 const LessonContainer = styled.div`
-  h6, p {
+  h6,
+  p {
     color: black;
     margin: 0;
     line-height: 1.5;
   }
-  
+
   li {
     margin: 0;
   }
-  
+
   &:hover {
     li {
       span {
         border-bottom: 1px solid black;
-          }
+      }
     }
   }
 `
 
 export default TableOfContents
-

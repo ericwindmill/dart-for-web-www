@@ -3,6 +3,7 @@ title: "Booleans"
 lesson: 3
 chapter: 1
 type: "lesson"
+context: "language-tour"
 ---
 
 Boolean values are arguably not like Javascript. In JS, there are multiple values that can evaluate to `true`. In fact, most values are considered 'truthy'.

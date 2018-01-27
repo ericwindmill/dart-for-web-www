@@ -3,6 +3,7 @@ title: "Class Constructors"
 chapter: 5
 lesson: 3
 type: "lesson"
+context: "language-tour"
 ---
 
 Defining basic class constructors is easy in Dart. You only need to define the properties that it expects from outside itself, and then call the name of the class like a function.
