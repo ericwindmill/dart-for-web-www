@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de849394-2008-46b0-9148-53273cdb204e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/dart_30/7-4-navigation-highlight.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/dart_30/7-5-simple-todo-2-delete-todo.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/layouts/css/prism-okaidia.css" afterPath="$PROJECT_DIR$/src/layouts/css/prism-okaidia.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/robots.txt" afterPath="$PROJECT_DIR$/static/robots.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="prism-okaidia.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/layouts/css/prism-okaidia.css">
+      <file leaf-file-name="robots.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/robots.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="634">
-              <caret line="61" column="1" lean-forward="true" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
+            <state relative-caret-position="96">
+              <caret line="4" column="42" lean-forward="false" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -72,7 +69,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/pages/dart30-index.jsx" />
         <option value="$PROJECT_DIR$/src/pages/content_index.jsx" />
         <option value="$PROJECT_DIR$/todo.md" />
         <option value="$PROJECT_DIR$/src/components/Pages/dart30-index.jsx" />
@@ -123,6 +119,7 @@
         <option value="$PROJECT_DIR$/content/dart_30/7-4-navigation-highlight.md" />
         <option value="$PROJECT_DIR$/content/dart_30/7-5-simple-todo-2-delete-todo.md" />
         <option value="$PROJECT_DIR$/src/layouts/css/prism-okaidia.css" />
+        <option value="$PROJECT_DIR$/static/robots.txt" />
       </list>
     </option>
   </component>
@@ -179,48 +176,7 @@
             <path>
               <item name="dart-for-web" type="b2602c69:ProjectViewProjectNode" />
               <item name="dart-for-web" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dart-for-web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dart-for-web" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
-              <item name="dart_30" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dart-for-web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dart-for-web" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dart-for-web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dart-for-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dart-for-web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dart-for-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dart-for-web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dart-for-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dart-for-web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dart-for-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dart-for-web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dart-for-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -301,12 +257,12 @@
       <workItem from="1516908387746" duration="1517000" />
       <workItem from="1516929451881" duration="1722000" />
       <workItem from="1517066074157" duration="4689000" />
-      <workItem from="1517074227892" duration="20305000" />
+      <workItem from="1517074227892" duration="20442000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140903000" />
+    <option name="totallyTimeSpent" value="141040000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -346,13 +302,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Ui/HighlightedParagraph.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/layouts/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1015">
@@ -1381,6 +1330,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="634">
           <caret line="61" column="1" lean-forward="true" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
+          <folding>
+            <marker date="1517161852049" expanded="true" signature="18:45" ph="{...}" />
+            <marker date="1517161852049" expanded="true" signature="97:573" ph="{...}" />
+            <marker date="1517161852049" expanded="true" signature="617:693" ph="{...}" />
+            <marker date="1517161852049" expanded="true" signature="757:783" ph="{...}" />
+            <marker date="1517161852049" expanded="true" signature="820:917" ph="{...}" />
+            <marker date="1517161852049" expanded="true" signature="979:1000" ph="{...}" />
+            <marker date="1517161852049" expanded="true" signature="1021:1042" ph="{...}" />
+            <marker date="1517161852049" expanded="true" signature="1055:1074" ph="{...}" />
+            <marker date="1517161852049" expanded="true" signature="1166:1187" ph="{...}" />
+            <marker date="1517161852049" expanded="true" signature="1219:1240" ph="{...}" />
+            <marker date="1517161852049" expanded="true" signature="1337:1358" ph="{...}" />
+            <marker date="1517161852049" expanded="true" signature="1471:1492" ph="{...}" />
+            <marker date="1517161852049" expanded="true" signature="1544:1565" ph="{...}" />
+            <marker date="1517161852049" expanded="true" signature="1582:1603" ph="{...}" />
+            <marker date="1517161852049" expanded="true" signature="1636:1657" ph="{...}" />
+            <marker date="1517161852049" expanded="true" signature="1689:1713" ph="{...}" />
+            <marker date="1517161852049" expanded="true" signature="1728:1753" ph="{...}" />
+            <marker date="1517161852049" expanded="true" signature="1769:1788" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/robots.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="42" lean-forward="false" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
           <folding />
         </state>
       </provider>
