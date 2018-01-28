@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de849394-2008-46b0-9148-53273cdb204e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/dart_30/7-3-text-editor.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/dart_30/7-4-navigation-highlight.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/content/dart_30/7-5-simple-todo-2-delete-todo.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/layouts/css/prism-okaidia.css" afterPath="$PROJECT_DIR$/src/layouts/css/prism-okaidia.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,50 +25,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="7-3-text-editor.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/content/dart_30/7-3-text-editor.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="569">
-                <caret line="371" column="0" lean-forward="false" selection-start-line="371" selection-start-column="0" selection-end-line="371" selection-end-column="0" />
-                <folding>
-                  <marker date="1517084676581" expanded="true" signature="2932:3032" ph="{...}" />
-                  <marker date="1517084676581" expanded="true" signature="3062:3154" ph="{...}" />
-                  <marker date="1517084676581" expanded="true" signature="3178:3240" ph="{...}" />
-                  <marker date="1517084676581" expanded="true" signature="3442:3612" ph="//..." />
-                  <marker date="1517084676581" expanded="true" signature="3625:3725" ph="{...}" />
-                  <marker date="1517084676581" expanded="true" signature="4475:4585" ph="{...}" />
-                  <marker date="1517084676581" expanded="true" signature="4499:4582" ph="//..." />
-                  <marker date="1517084676581" expanded="true" signature="5177:5835" ph="{...}" />
-                  <marker date="1517084676581" expanded="true" signature="5204:5523" ph="//..." />
-                  <marker date="1517084676581" expanded="true" signature="5560:5833" ph="{...}" />
-                  <marker date="1517084676581" expanded="true" signature="6146:6677" ph="{...}" />
-                  <marker date="1517084676581" expanded="true" signature="6207:6303" ph="{...}" />
-                  <marker date="1517084676581" expanded="true" signature="6307:6378" ph="//..." />
-                  <marker date="1517084676581" expanded="true" signature="6403:6675" ph="{...}" />
-                  <marker date="1517084676581" expanded="true" signature="7259:7491" ph="{...}" />
-                  <marker date="1517084676581" expanded="true" signature="7349:7405" ph="//..." />
-                  <marker date="1517084676581" expanded="true" signature="7433:7488" ph="{...}" />
-                  <marker date="1517084676581" expanded="true" signature="7783:7877" ph="{...}" />
-                  <marker date="1517084676581" expanded="true" signature="7907:8320" ph="{...}" />
-                  <marker date="1517084676581" expanded="true" signature="7993:8146" ph="{...}" />
-                  <marker date="1517084676581" expanded="true" signature="8172:8318" ph="{...}" />
-                  <marker date="1517084676581" expanded="true" signature="8344:8483" ph="{...}" />
-                  <marker date="1517084676581" expanded="true" signature="8425:8480" ph="{...}" />
-                  <marker date="1517084676581" expanded="true" signature="8896:9194" ph="{...}" />
-                  <marker date="1517084676581" expanded="true" signature="8896:9201" ph="{...}" />
-                  <marker date="1517084676581" expanded="true" signature="8999:9194" ph="{...}" />
-                  <marker date="1517084676581" expanded="true" signature="9071:9087" ph="//..." />
-                  <marker date="1517084676581" expanded="true" signature="9071:9189" ph="//..." />
-                  <marker date="1517084676581" expanded="true" signature="9071:9194" ph="//..." />
-                  <marker date="1517084676581" expanded="true" signature="9366:10300" ph="{...}" />
-                  <marker date="1517084676581" expanded="true" signature="9452:9727" ph="{...}" />
-                  <marker date="1517084676581" expanded="true" signature="9663:9723" ph="//..." />
-                  <marker date="1517084676581" expanded="true" signature="9787:10126" ph="{...}" />
-                  <marker date="1517084676581" expanded="true" signature="10152:10298" ph="{...}" />
-                </folding>
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name="prism-okaidia.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/layouts/css/prism-okaidia.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="634">
+              <caret line="61" column="1" lean-forward="true" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -108,9 +72,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/content/lessons/7-1--environment.md" />
-        <option value="$PROJECT_DIR$/src/components/Home/Home.jsx" />
-        <option value="$PROJECT_DIR$/gatsby-config.js" />
         <option value="$PROJECT_DIR$/src/pages/dart30-index.jsx" />
         <option value="$PROJECT_DIR$/src/pages/content_index.jsx" />
         <option value="$PROJECT_DIR$/todo.md" />
@@ -159,6 +120,9 @@
         <option value="$PROJECT_DIR$/content/dart_30/7-2-simple-todo.md" />
         <option value="$PROJECT_DIR$/src/templates/lesson.jsx" />
         <option value="$PROJECT_DIR$/content/dart_30/7-3-text-editor.md" />
+        <option value="$PROJECT_DIR$/content/dart_30/7-4-navigation-highlight.md" />
+        <option value="$PROJECT_DIR$/content/dart_30/7-5-simple-todo-2-delete-todo.md" />
+        <option value="$PROJECT_DIR$/src/layouts/css/prism-okaidia.css" />
       </list>
     </option>
   </component>
@@ -181,8 +145,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="6" />
+    <option name="y" value="22" />
     <option name="width" value="1920" />
-    <option name="height" value="1200" />
+    <option name="height" value="1058" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -235,6 +201,25 @@
               <item name="dart-for-web" type="b2602c69:ProjectViewProjectNode" />
               <item name="dart-for-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dart-for-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dart-for-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dart-for-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dart-for-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dart-for-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dart-for-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -254,7 +239,7 @@
     <property name="node.js.path.for.package.stylelint" value="project" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.selected.package.stylelint" value="$PROJECT_DIR$/node_modules/stylelint" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="jsgraphql-schema-editor-notification" value="false" />
@@ -316,15 +301,16 @@
       <workItem from="1516908387746" duration="1517000" />
       <workItem from="1516929451881" duration="1722000" />
       <workItem from="1517066074157" duration="4689000" />
-      <workItem from="1517074227892" duration="9562000" />
+      <workItem from="1517074227892" duration="20305000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130160000" />
+    <option name="totallyTimeSpent" value="140903000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Key Promoter X" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25266525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -360,42 +346,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Layout/SidebarTableOfContents.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/todo.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="72">
-            <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Layout/Header.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Pages/dart30-index.jsx" />
     <entry file="file://$PROJECT_DIR$/src/components/Ui/HighlightedParagraph.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/layouts/css/prism-okaidia.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1270,11 +1224,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/todo.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-1163">
+            <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/content/dart_30/7-3-text-editor.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="569">
-            <caret line="371" column="0" lean-forward="false" selection-start-line="371" selection-start-column="0" selection-end-line="371" selection-end-column="0" />
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="3" />
             <folding>
               <marker date="1517084676581" expanded="true" signature="2932:3032" ph="{...}" />
               <marker date="1517084676581" expanded="true" signature="3062:3154" ph="{...}" />
@@ -1310,9 +1275,113 @@
               <marker date="1517084676581" expanded="true" signature="9663:9723" ph="//..." />
               <marker date="1517084676581" expanded="true" signature="9787:10126" ph="{...}" />
               <marker date="1517084676581" expanded="true" signature="10152:10298" ph="{...}" />
+              <marker date="1517084676581" expanded="true" signature="11452:11552" ph="{...}" />
+              <marker date="1517084676581" expanded="true" signature="11582:12352" ph="{...}" />
+              <marker date="1517084676581" expanded="true" signature="11724:11938" ph="{...}" />
+              <marker date="1517084676581" expanded="true" signature="11970:12178" ph="{...}" />
+              <marker date="1517084676581" expanded="true" signature="12204:12350" ph="{...}" />
+              <marker date="1517084676581" expanded="true" signature="12376:13593" ph="{...}" />
+              <marker date="1517084676581" expanded="true" signature="12575:12978" ph="{...}" />
+              <marker date="1517084676581" expanded="true" signature="13009:13591" ph="{...}" />
+              <marker date="1517084676581" expanded="true" signature="13229:13418" ph="//..." />
             </folding>
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/dart_30/7-4-navigation-highlight.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="3" />
+            <folding>
+              <marker date="1517155675345" expanded="true" signature="1706:1865" ph="{...}" />
+              <marker date="1517155675345" expanded="true" signature="1706:2041" ph="{...}" />
+              <marker date="1517155675345" expanded="true" signature="2429:2585" ph="{...}" />
+              <marker date="1517155675345" expanded="true" signature="3091:3132" ph="{...}" />
+              <marker date="1517155675345" expanded="true" signature="3856:5237" ph="{...}" />
+              <marker date="1517155675345" expanded="true" signature="4036:4177" ph="//..." />
+              <marker date="1517155675345" expanded="true" signature="4404:4751" ph="//..." />
+              <marker date="1517155675345" expanded="true" signature="5353:5588" ph="{...}" />
+              <marker date="1517155675345" expanded="true" signature="5635:5791" ph="{...}" />
+              <marker date="1517155675345" expanded="true" signature="5850:6392" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.cache/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <marker date="1517104828394" expanded="true" signature="18:62" ph="{...}" />
+            <marker date="1517104828394" expanded="false" signature="70:317" ph="..." />
+            <marker date="1517104828394" expanded="true" signature="449:1778" ph="{...}" />
+            <marker date="1517104828394" expanded="true" signature="514:851" ph="/** Service Workers are persistent by nature. They stick around, ...*/" />
+            <marker date="1517104828394" expanded="true" signature="888:1061" ph="{...}" />
+            <marker date="1517104828394" expanded="true" signature="959:1056" ph="{...}" />
+            <marker date="1517104828394" expanded="true" signature="1007:1050" ph="{...}" />
+            <marker date="1517104828394" expanded="true" signature="1174:1203" ph="{...}" />
+            <marker date="1517104828394" expanded="true" signature="1249:1302" ph="&lt;HotContainer/&gt;" />
+            <marker date="1517104828394" expanded="true" signature="1335:1387" ph="{...}" />
+            <marker date="1517104828394" expanded="true" signature="1417:1776" ph="{...}" />
+            <marker date="1517104828394" expanded="true" signature="1457:1771" ph="{...}" />
+            <marker date="1517104828394" expanded="true" signature="1526:1571" ph="{...}" />
+            <marker date="1517104828394" expanded="true" signature="1603:1664" ph="&lt;HotContainer/&gt;" />
+            <marker date="1517104828394" expanded="true" signature="1701:1757" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/dart_30/7-5-simple-todo-2-delete-todo.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="473">
+            <caret line="273" column="17" lean-forward="false" selection-start-line="273" selection-start-column="17" selection-end-line="273" selection-end-column="17" />
+            <folding>
+              <marker date="1517161728158" expanded="true" signature="635:838" ph="..." />
+              <marker date="1517161728158" expanded="true" signature="686:805" ph="..." />
+              <marker date="1517161728158" expanded="true" signature="1310:1369" ph="{...}" />
+              <marker date="1517161728158" expanded="true" signature="1386:1422" ph="{...}" />
+              <marker date="1517161728158" expanded="true" signature="1435:1464" ph="{...}" />
+              <marker date="1517161728158" expanded="true" signature="3246:4342" ph="{...}" />
+              <marker date="1517161728158" expanded="true" signature="3246:4446" ph="{...}" />
+              <marker date="1517161728158" expanded="true" signature="3386:3521" ph="//..." />
+              <marker date="1517161728158" expanded="true" signature="3566:3679" ph="//..." />
+              <marker date="1517161728158" expanded="true" signature="3813:4342" ph="{...}" />
+              <marker date="1517161728158" expanded="true" signature="4771:4856" ph="{...}" />
+              <marker date="1517161728158" expanded="true" signature="4821:4854" ph="{...}" />
+              <marker date="1517161728158" expanded="true" signature="5230:5316" ph="{...}" />
+              <marker date="1517161728158" expanded="true" signature="5281:5314" ph="{...}" />
+              <marker date="1517161728158" expanded="true" signature="6000:6036" ph="{...}" />
+              <marker date="1517161728158" expanded="true" signature="6606:7148" ph="{...}" />
+              <marker date="1517161728158" expanded="true" signature="6803:6832" ph="//..." />
+              <marker date="1517161728158" expanded="true" signature="6855:7146" ph="{...}" />
+              <marker date="1517161728158" expanded="true" signature="7419:8292" ph="{...}" />
+              <marker date="1517161728158" expanded="true" signature="7530:7674" ph="{...}" />
+              <marker date="1517161728158" expanded="true" signature="7704:8290" ph="{...}" />
+              <marker date="1517161728158" expanded="true" signature="7710:7876" ph="//..." />
+              <marker date="1517161728158" expanded="true" signature="7953:8095" ph="//..." />
+              <marker date="1517161728158" expanded="true" signature="9253:10060" ph="{...}" />
+              <marker date="1517161728158" expanded="true" signature="9253:10218" ph="{...}" />
+              <marker date="1517161728158" expanded="true" signature="9364:9508" ph="{...}" />
+              <marker date="1517161728158" expanded="true" signature="9527:9714" ph="{...}" />
+              <marker date="1517161728158" expanded="true" signature="9720:10060" ph="//..." />
+              <marker date="1517161728158" expanded="true" signature="10189:10216" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/layouts/css/prism-okaidia.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="634">
+          <caret line="61" column="1" lean-forward="true" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
