@@ -1,8 +1,9 @@
 module.exports = {
   blogPostDir: 'posts', // The name of directory that contains your posts.
   lessonsDir: 'lessons', // The name of the directory that contains lessons or docs.
-  siteTitle: 'Dart for Web Developers', // Site title.
-  siteTitleAlt: 'Gatsby Starter Template for Creating Docs', // Alternative site title for SEO.
+  siteTitle: 'Dart for JavaScript Developers', // Site title.
+  siteTitleAlt: 'From the basics of Dart programming to DOM manipulation.' +
+  'This is what you need to know to build the web with Google\'s alternative to JavaScript.', // Alternative site title for SEO.
   siteLogo: '/logos/Dart-logo.png', // Logo used for SEO and manifest.
   siteUrl: 'https://ericwindmill.com', // Domain of your website without pathPrefix.
   pathPrefix: '/', // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
