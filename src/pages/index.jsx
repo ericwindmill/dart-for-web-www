@@ -35,7 +35,7 @@ class Index extends React.Component {
                   alt="dart"
                   width="150px"
                 />
-                <p>Intro to the Dart Lanugage for JavaScript Developers.</p>
+                <p>Intro to the Dart Language for JavaScript Developers.</p>
               </MainCard>
               <MainCard link={'welcome-to-dart-30'}>
                 <h2>Dart 30</h2>
