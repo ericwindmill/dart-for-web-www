@@ -9,7 +9,7 @@ context: "language-tour"
 The cascade operator lets you perform a series of operations on the same object. It's basically syntactic sugar:
 
 ```dart
-class Human {
+class Person {
   final firstName;
   final lastName;
   final age;
